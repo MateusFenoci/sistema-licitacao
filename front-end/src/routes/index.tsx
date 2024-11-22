@@ -6,6 +6,8 @@ import Suppliers from '../pages/Suppliers';
 import Inventory from '../pages/Inventory';
 import Services from '../pages/Services';
 import Employees from '../pages/Employees';
+import Fuel from '../pages/Fuel';
+import Fines from '../pages/Fines';
 
 const AppRoutes = () => {
   return (
@@ -17,6 +19,8 @@ const AppRoutes = () => {
       <Route path="/inventory" element={<Inventory />} />
       <Route path="/services" element={<Services />} />
       <Route path="/employees" element={<Employees />} />
+      <Route path="/fuel" element={<Fuel />} />
+      <Route path="/fines" element={<Fines />} />
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
     </Routes>
   );
